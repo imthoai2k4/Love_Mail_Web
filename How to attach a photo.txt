@@ -1,0 +1,18 @@
+-Arrange the photos in the order 1.jpg, 2.jpg, 3.jpg...Move it to the 'pic' folder.
+
+-The image named 7.jpg will be the first lock screen image for the email.
+
+-The answers will be saved in the file answers.txt.
+
+-Default password: 1111. Change the password in script.js. Replace it at the top of the page.
+
+-Change the content of the letter in lines 142–144 of script.js.
+
+-The question at the end for her—line 444 in the script.js file.
+
+
+-Double-click the file
+
+run.bat
+
+-Locate the newly appeared link ending in .trycloudflare.com, then copy and send it.

@@ -1,0 +1,16 @@
+# Cloudflare binary (54MB, không cần đưa lên GitHub)
+cloudflared.exe
+
+# File câu trả lời (dữ liệu cá nhân)
+answers.txt
+
+# Log tạm
+tunnel.log
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db

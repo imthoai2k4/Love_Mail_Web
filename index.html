@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Gửi Em</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="bg-hearts-container"></div>
+    <div id="floating-images-container"></div>
+
+    <!-- Màn hình 1: Khóa Mật Khẩu -->
+    <div id="lock-screen" class="screen active">
+        <div class="lock-container">
+            <div class="slider">
+                <img src="pic/7.jpg" alt="Slider">
+            </div>
+            <div class="numpad-section">
+                <h2 id="password-display">Nhập mật khẩu</h2>
+                <div class="dots" id="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="numpad">
+                    <button class="num-btn" data-val="1">1</button>
+                    <button class="num-btn" data-val="2">2</button>
+                    <button class="num-btn" data-val="3">3</button>
+                    <button class="num-btn" data-val="4">4</button>
+                    <button class="num-btn" data-val="5">5</button>
+                    <button class="num-btn" data-val="6">6</button>
+                    <button class="num-btn" data-val="7">7</button>
+                    <button class="num-btn" data-val="8">8</button>
+                    <button class="num-btn" data-val="9">9</button>
+                    <button class="num-btn clear-btn" data-val="clear">⌫</button>
+                    <button class="num-btn" data-val="0">0</button>
+                    <button class="num-btn blank-btn" style="visibility: hidden;"></button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Màn hình 2: Phong bì -->
+    <div id="envelope-screen" class="screen">
+        <div class="envelope-container" id="envelope-btn">
+            <div class="envelope-wrapper">
+                <div class="envelope" id="main-envelope">
+                    <div class="envelope-back"></div>
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-paper">
+                        <span class="paper-preview-text">Gửi em...</span>
+                    </div>
+                    <div class="envelope-front-left"></div>
+                    <div class="envelope-front-right"></div>
+                    <div class="envelope-front-bottom"></div>
+                    <div class="envelope-seal">❤️</div>
+                </div>
+            </div>
+            <p class="pulse-text" id="envelope-hint">Chạm để mở ❤️</p>
+        </div>
+    </div>
+
+    <!-- Màn hình 3: Các lá thư xếp chồng -->
+    <div id="notebook-screen" class="screen">
+        <div class="letters-wrapper">
+            <div class="card-stack" id="card-stack">
+                <!-- Các lá thư xếp chồng sẽ được render tại đây -->
+            </div>
+            <p class="swipe-hint" id="swipe-hint">Vuốt hoặc chạm lá thư để đọc tiếp...</p>
+
+            <!-- Form cuối cùng (ẩn đi, chỉ hiện sau khi vuốt hết thư) -->
+            <div class="final-form" id="final-form" style="display: none;">
+                <h2 class="question-text">Cho Anh Cơ Hội được chờ em nhé?</h2>
+                <div class="buttons-container">
+                    <button id="btn-yes" class="action-btn yes-btn">Có</button>
+                    <button id="btn-no" class="action-btn no-btn">Không</button>
+                </div>
+                <div id="answer-section" class="answer-section" style="display: none;">
+                    <input type="text" id="custom-answer" placeholder="Viết vài lời cho anh...">
+                    <button id="btn-submit" class="action-btn submit-btn">Gửi</button>
+                </div>
+                <p id="success-msg" style="display: none; color: #ff4d85; font-weight: bold; margin-top: 15px;">Đã gửi
+                    thành công! ❤️</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
