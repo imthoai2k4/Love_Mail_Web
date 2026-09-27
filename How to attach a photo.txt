@@ -1,4 +1,4 @@
--Arrange the photos in the order 1.jpg, 2.jpg, 3.jpg...Move it to the 'pic' folder.
+-Arrange the photos in the order 1.jpg, 2.jpg, 3.jpg...Move it to the 'pic' folder. at least 19 photos
 
 -The image named 7.jpg will be the first lock screen image for the email.
 
